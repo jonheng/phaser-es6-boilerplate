@@ -1,3 +1,48 @@
+# Introduction
+
+This is a modification of this repository: https://github.com/joshuamorony/phaser-es6-boilerplate
+
+Changes include:
+
+* Using Phaser 3.13.0
+
+# Usage
+
+You need [Node.js and npm](https://nodejs.org/). You should also have git installed, but it's not mandatory.
+
+Clone the repository (or download the ZIP file)
+
+`git clone https://github.com/jonheng/phaser-es6-boilerplate.git`
+
+Install dependencies
+
+`npm install`
+
+Run a development build...
+
+`npm start`
+
+...or a production build.
+
+`npm run production`
+
+Development builds will copy `phaser.min.js` together with `phaser.js`.
+Your ES6 code will be transpiled into ES5 and concatenated into a single file.
+A sourcemap for your code will also be included (by default `game.map.js`).
+
+Production builds will only copy `phaser.min.js`. Your ES6 code will be transpiled and minified using UglifyJS.
+
+Any modification to the files inside the `./src` and `./static` folder will trigger a full page reload.
+
+If you modify the contents of other files, please manually restart the server.
+
+
+# Previous documentation below:
+
+## **Modifications by joshuamorony**
+___
+
+
 This template is a modified version of this repository: https://github.com/belohlavek/phaser-es6-boilerplate
 
 It has been modified to include the following states:
@@ -10,9 +55,10 @@ It has been modified to include the following states:
 
 and is set up to auto resize to cover the entire available viewport. It also includes a service worker and manifest file for progressive web app support.
 
-Original documentation below:
+## **Selected original documentation by belohlavek**
+___
 
-# Phaser ES6 Boilerplate
+## Phaser ES6 Boilerplate
 
 This is a non-professional Phaser template for building standard games using the 
 Phaser framework and ES6/2015.
@@ -45,38 +91,7 @@ I found the new Class-based syntax to be a better fit for my developer needs. Un
 all the features of the new standard is by using a transpiler. This boilerplate is an attempt to reduce the time spent 
 configurating a project and installing dependencies by providing a template that can work as an scaffold for any Phaser game.
 
-## Usage
-
-You need [Node.js and npm](https://nodejs.org/). You should also have git installed, but it's not mandatory.
-
-Clone the repository (or download the ZIP file)
-
-`git clone https://github.com/belohlavek/phaser-es6-boilerplate.git`
-
-Install dependencies
-
-`npm install`
-
-Run a development build...
-
-`npm start`
-
-...or a production build.
-
-`npm run production`
-
-Development builds will copy `phaser.min.js` together with `phaser.map` and `phaser.js`
-Your ES6 code will be transpiled into ES5 and concatenated into a single file.
-A sourcemap for your code will also be included (by default `game.map.js`).
-
-Production builds will only copy `phaser.min.js`. Your ES6 code will be transpiled and
-minified using UglifyJS.
-
-Any modification to the files inside the `./src` and `./static` folder will trigger a full page reload.
-
-If you modify the contents of other files, please manually restart the server.
-
-### Modifying `gulpfile.js`
+## Modifying `gulpfile.js`
 
 See [gulpfile.md](https://github.com/belohlavek/phaser-es6-boilerplate/blob/master/gulpfile.md)
 
@@ -84,15 +99,6 @@ See [gulpfile.md](https://github.com/belohlavek/phaser-es6-boilerplate/blob/mast
 
 * Faster builds (no need to copy static files every time).
 * Live reload now works with static files too!
-
-## Contributing
-
-Please report any bugs or add requests on [Github Issues](https://github.com/belohlavek/phaser-es6-boilerplate/issues).
-
-## About me
-
-My name is Daniel Belohlavek: I'm from Buenos Aires, Argentina and I love to derp around and code
-silly snippets. You can follow me on Twitter [@dbhvk](http://twitter.com/dbhvk)
 
 ## License
 
